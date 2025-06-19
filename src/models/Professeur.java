@@ -12,6 +12,7 @@ public class Professeur {
     }
 
     public boolean enseigneCeModule(String nomDuModule) {
+        //MR Nom de variable sans accent à éviter
         boolean réponse = false;
         for (int i = 0; i < modulesEnseignes.length; i++) {
             if (modulesEnseignes[i].getNom() == nomDuModule) {

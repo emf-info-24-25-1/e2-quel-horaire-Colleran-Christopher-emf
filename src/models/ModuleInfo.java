@@ -23,6 +23,7 @@ public class ModuleInfo {
 
     @Override
     public String toString() {
+        //MR Par rapport aux enseignements EMF, il est mieux d'avoir qu'un return à la fin de la méthode.
         if (getProfesseur() == null) {
             return nom;
         } else {

@@ -5,6 +5,7 @@ import java.time.format.TextStyle;
 import java.util.Locale;
 
 public class Bloc {
+    //MR Il y a 10 jours et non 9
     public static final int NBRE_DEMI_JOURS_SEMAINE = 9;
 
     private final String nom;
@@ -43,6 +44,7 @@ public class Bloc {
     }
 
     public void afficherHoraire() {
+        //MR Pas d'utilisation de boucle, mais fonctionnel Top !
         System.out.println(DayOfWeek.values()[0].getDisplayName(TextStyle.FULL, Locale.FRANCE));
         System.out.println(" matin : " + modules[0]);
         System.out.println(" après-midi : " + modules[1]);

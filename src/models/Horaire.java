@@ -16,6 +16,7 @@ public class Horaire {
     }
 
     public boolean planifier(ModuleInfo[] modules, Professeur[] profs) {
+        //MR Tu aurais dû faire en deux étapes setProfesseur, puis ensuite planifierModule dans une autre (pas de boucle imbriquée)
         boolean reussi = false;
 
         for (int i = 0; i < modules.length; i++) {
@@ -47,6 +48,7 @@ public class Horaire {
     }
 
     public Bloc moduleDansQueBloc(ModuleInfo module) {
+        //MR Attention au accent pour les variables
         Bloc trouvé = null;
         for (int i = 0; i < blocs.length; i++) {
             if (blocs[i].contientModule(module)) {
